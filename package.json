@@ -1,22 +1,16 @@
 {
-  "name": "electron-quick-start",
+  "name": "sm.modvive",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "./out/main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
+  "repository": "https://github.com/SynicalMX/sm.modvive",
+  "keywords": [],
+  "author": "Logan Taynor",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^18.0.0"
+    "electron": "^18.0.1"
   }
 }
