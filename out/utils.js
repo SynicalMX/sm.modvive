@@ -1,7 +1,9 @@
 "use strict";
-// export function getWorkspace(){
-//     let dir: string = __dirname;
-//     let workspace: string[] = dir.split("out");
-//     return workspace;
-// }
-console.log('utils!');
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getWorkspace = void 0;
+function getWorkspace() {
+    let dir = __dirname;
+    let workspace = dir.split("out");
+    return workspace;
+}
+exports.getWorkspace = getWorkspace;

@@ -1,8 +1,6 @@
-// export function getWorkspace(){
-//     let dir: string = __dirname;
+export function getWorkspace(){
+    let dir: string = __dirname;
 
-//     let workspace: string[] = dir.split("out");
-//     return workspace;
-// }
-
-console.log('utils!');
+    let workspace: string[] = dir.split("out");
+    return workspace;
+}
