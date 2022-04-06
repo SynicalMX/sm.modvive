@@ -4,8 +4,17 @@ body {
     width: 100%;
     height: 100%;
     background: rgb(56,56,56);
+    overflow: hidden;
 }
 
 .cenH {
-    
+    margin: 0 auto;
+    width: 50%;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }

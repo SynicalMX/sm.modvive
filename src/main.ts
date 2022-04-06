@@ -4,10 +4,6 @@ const electron = require('electron');
 const { app } = require('electron');
 const path = require('path');
 
-import { getWorkspace } from "./utils";
-
-const image = electron.NativeImage
-
 function createWindow () {
   // Create the browser window.
   const mainWindow = new electron.BrowserWindow({
@@ -22,7 +18,7 @@ function createWindow () {
   mainWindow.loadFile(path.join(__dirname, '/html/index.html'))
   mainWindow.removeMenu();
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 }
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
