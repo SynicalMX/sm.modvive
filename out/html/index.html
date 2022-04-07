@@ -8,7 +8,49 @@
     <title>sm.modvive</title>
   </head>
   <body>
-    <div id="logo" class="cenH"><img src="../assets/img/Logo.png"></div>
+    <div id="logo" class="cenH">
+      <!-- Logo -->
+      <svg height="100" width="100">
+        <defs>
+          <linearGradient id="0" x1="0.5" y1="0" x2="0.5" y2="1">
+            <stop offset="0%" stop-color="#ff000b"/>
+            <stop offset="25%" stop-color="#ff003c"/>
+            <stop offset="50%" stop-color="#ff0053"/>
+            <stop offset="100%" stop-color="#ff0072"/>
+          </linearGradient>
+          <clipPath id="leftCut">
+              <rect width="10" height="5" x="5" y="37" />
+              <rect width="11" height="5" x="4" y="47" />
+              <rect width="10" height="5" x="5" y="57" />
+          </clipPath>
+      
+          <clipPath id="rightCut">
+              <rect width="10" height="5" x="85" y="37" />
+              <rect width="11" height="5" x="85" y="47" />
+              <rect width="10" height="5" x="85" y="57" />
+          </clipPath>
+        </defs>
+        <ellipse cx="50" cy="50" rx="45" ry="45" clip-path="" fill="url(#0)" height="100%" width="100%" />
+        <ellipse cx="50" cy="50" rx="45" ry="45" clip-path="url(#leftCut)" fill="#3e3e3e" height="100%" width="100%" />
+        <ellipse cx="50" cy="50" rx="45" ry="45" clip-path="url(#rightCut)" fill="#3e3e3e" height="100%" width="100%" />
+        <ellipse cx="50" cy="50" rx="25" ry="25" fill="#393939" />
+        <ellipse cx="50" cy="50" rx="20" ry="20" fill="#7c7b6f" />
+        <ellipse cx="50" cy="50" rx="5" ry="5" fill="#393939" />
+      </svg>
+      <h1 id="title">sm.modvive</h1>
+    </div>
+    
+    <br>
+
+    <!-- Example Mod Table -->
+    <div class="cenH" id="menu">
+      <div class="mod" id="example">
+        <img class="mod_img" src="../assets/img/unknown image.png">
+        <h2 class="mod_title">Example Mod<br><span class="mod_desc">Example Description</span></h2>
+        
+        <button id="example" class="addMod">+</button>
+      </div>
+    </div>
 
     <script src="../renderer.js"></script>
   </body>
