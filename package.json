@@ -11,6 +11,6 @@
   "author": "Logan Taynor",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^18.0.3"
+    "electron": "^21.2.0"
   }
 }
